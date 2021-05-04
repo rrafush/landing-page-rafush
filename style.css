@@ -354,7 +354,7 @@ h1 {
 
   .bichinhoCorpo{
     width: 100px;
-    bottom: 10%;
+    bottom: 11%;
     left: 60%;
   }
 
@@ -388,6 +388,7 @@ h1 {
   #img{
     width: 300%;
     left: -100%;
+    top: -10%
   }
 
   #waves {
@@ -406,14 +407,14 @@ h1 {
   }
 
   .title{
-    margin: 60vh auto;
+    margin: 55vh auto;
     width: 80%;
   }
 
 
 
   .container-icon{
-    margin: 69vh auto;
+    margin: 65vh auto;
     left: 5%;
   }
 } 
