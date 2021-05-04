@@ -1,0 +1,420 @@
+html[data-theme='light']{
+  --bg:  radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  --icon-color: #333;
+  --icon-hover:  #c100e7;
+}
+
+html[data-theme='dark']{
+  --bg:  radial-gradient(
+    circle,
+    rgb(61, 170, 173) 0%,
+    rgb(3, 36, 73) 100%
+  );
+  --icon-color: #fff;
+  --icon-hover:  #ffd16c;
+}
+
+.bichinhoCorpo{
+  position: absolute;
+  width: 11vw;
+  bottom: 5%;
+  left: 20%;
+  z-index: 99;
+}
+
+#brancoOlho02{
+  fill: white;
+}
+
+#brancoOlho01{
+  fill: white;
+}
+
+.roxo{
+  fill: #D8CAE5 !important
+}
+
+.maos{
+  position: absolute;
+  width: 16.3vw;
+  bottom: 5%;
+  left: 18%;
+  z-index: 100;
+}
+
+.hide{
+  opacity: 0;
+}
+
+#habilidades{
+  position: absolute;
+  width: 300px;
+  bottom: 5%;
+  right: 5%;
+  z-index: 1000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+  overflow-x: hidden;
+}
+.container-toggle{
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin-top: 50px;
+  z-index: 1000;
+}
+
+.switch{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 40px;
+}
+
+.slider{
+  position: absolute;
+  background-color: white;
+  border-radius: 50px;
+  transition: .5s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.slider::before{
+  position: absolute;
+  content: ' ';
+  background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgb(255, 155, 222) 100%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  top: 17%;
+  left: 10%;
+  transition: .5s;
+  z-index: 1000;
+}
+
+input:checked + .slider{
+  background-color: rgb(70, 70, 70);
+}
+
+
+
+input:checked + .slider::before{
+  background: linear-gradient(45deg, rgb(6, 104, 105) 0%, rgb(82, 212, 235) 100%);
+  transform: translate(47px, 0);
+}
+
+.sun{
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  visibility: visible;
+}
+
+input:checked ~ .sun {
+  visibility: hidden;
+}
+
+.moon{
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  visibility: hidden;
+}
+
+input:checked ~ .moon {
+  visibility: visible;
+}
+
+
+.switch input{
+  display: none;
+}
+
+.container-icon{
+  margin: 60vh 65vw;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 250px;
+  z-index: 1000;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  fill: var(--icon-color);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.icon:hover {
+  fill: var(--icon-hover);
+}
+
+#img {
+  position: fixed;
+  height: 100vh;
+  width: max-content;
+  object-fit: fill;
+  z-index: 2;
+}
+
+#waves {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+
+.container {
+  height: 100%;
+  background: var(--bg) ;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.title {
+  margin: 47vh 65vw;
+  width: 500px;
+  text-shadow: 0px 1px 0px #5efcc8;
+  position: relative;
+  z-index: 3;
+}
+
+.marker01 {
+  position: absolute;
+  top: 2px;
+  left: -20px;
+  transform: scaleX(0);
+  width: 270px;
+  height: 30px;
+  background-color: white;
+  z-index: -1;
+}
+
+.marker02 {
+  position: absolute;
+  transform: scaleX(0);
+  top: 35px;
+  left: -20px;
+  width: 350px;
+  height: 30px;
+  background-color: white;
+  z-index: -1;
+}
+
+
+
+
+  @media only screen and (min-width: 800px) and (max-width: 1090px){
+
+    .bichinhoCorpo{
+      bottom: 8%;
+      left: 25%;
+    }
+  
+    .maos{
+      bottom: 7%;
+      left: 23%;
+    }
+
+    .fillWhite{
+      position: absolute;
+      height: 5%;
+      width: 100%;
+      bottom: 0;
+      background-color: white;
+      z-index: 100;
+    }
+
+    #habilidades{
+      width: 200px;
+    }
+
+    #waves{
+      bottom: 5%;
+    }
+
+    h1{
+      font-size: 1rem;
+    }
+
+    .marker{
+      height: 20px;
+    }
+    .marker01{
+      width: 200px;
+      top: 4px;
+    }
+    .marker02{
+      width: 270px;
+      top: 30px;
+    }
+    #img{
+      width: 200%;
+      left: -50%;
+    }
+
+    .title {
+      margin: 52vh 67vw;
+
+  }
+
+  .container-icon{
+    margin: 62vh 65vw;
+  }
+
+}
+
+@media only screen and (min-width: 414px) and (max-width: 800px){
+  #habilidades{
+    width: 200px;
+    bottom: 3%;
+  }
+
+  .bichinhoCorpo{
+    width: 100px;
+    bottom: 7.5%;
+    left: 35%;
+  }
+
+  .maos{
+    width: 150px;
+    bottom: 7%;
+    left: 32%;
+  }
+
+  h1{
+    font-size: 1rem;
+  }
+  #waves {
+    width: 1000px;
+    bottom: 5%;
+    left: 0;
+  }
+
+  .fillWhite{
+    position: absolute;
+    height: 6%;
+    width: 100%;
+    bottom: 0;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .container-icon{
+    margin: 60vh 60vw;
+    width: 150px;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+  .marker{
+    height: 20px;
+  }
+  .marker01{
+    width: 200px;
+    top: 4px;
+  }
+  .marker02{
+    width: 270px;
+    top: 30px;
+  }
+  #img{
+    width: 200%;
+    left: -50%;
+  }
+
+  .title {
+    margin: 60vh auto;
+
+}
+
+}
+
+@media only screen and (max-width: 414px){
+
+  .bichinhoCorpo{
+    width: 100px;
+    bottom: 10%;
+    left: 60%;
+  }
+
+  #habilidades{
+    width: 200px;
+    bottom: 3%;
+  }
+
+  .maos{
+    width: 150px;
+    bottom: 9%;
+    left: 55.5%;
+  }
+
+  .marker{
+    height: 20px;
+  }
+  .marker01{
+    width: 200px;
+    top: 4px;
+  }
+  .marker02{
+    width: 270px;
+    top: 30px;
+  }
+  
+  h1{
+    font-size: 1rem;
+  }
+
+  #img{
+    width: 300%;
+    left: -100%;
+  }
+
+  #waves {
+    width: 200%;
+    bottom: 2%;
+    left: -80%;
+  }
+
+  .fillWhite{
+    position: absolute;
+    height: 3%;
+    width: 100%;
+    bottom: 0;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .title{
+    margin: 60vh auto;
+    width: 80%;
+  }
+
+
+
+  .container-icon{
+    margin: 69vh auto;
+    left: 5%;
+  }
+} 
