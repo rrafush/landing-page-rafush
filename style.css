@@ -175,7 +175,7 @@ input:checked ~ .moon {
 
 #waves {
   position: fixed;
-  bottom: -12%;
+  bottom: -15%;
   z-index: 90;
   width: 100vw;
   left: 0;
