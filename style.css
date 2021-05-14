@@ -61,6 +61,7 @@ html[data-theme='dark']{
 body, html {
   margin: 0;
   padding: 0;
+  position: fixed;
   height: 100vh;
   font-family: "Space Mono", monospace;
   overflow-x: hidden;
