@@ -61,7 +61,6 @@ html[data-theme='dark']{
 body, html {
   margin: 0;
   padding: 0;
-  position: fixed;
   height: 100vh;
   font-family: "Space Mono", monospace;
   overflow-x: hidden;
@@ -178,6 +177,7 @@ input:checked ~ .moon {
   position: fixed;
   bottom: 0;
   z-index: 100;
+
 }
 
 .container {
