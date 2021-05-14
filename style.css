@@ -64,6 +64,7 @@ body {
   height: 100vh;
   font-family: "Space Mono", monospace;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .container-toggle{
   position: absolute;
