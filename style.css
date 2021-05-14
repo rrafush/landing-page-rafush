@@ -43,7 +43,7 @@ html[data-theme='dark']{
   width: 16.3vw;
   bottom: 5%;
   left: 18%;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .hide{
@@ -175,8 +175,10 @@ input:checked ~ .moon {
 
 #waves {
   position: fixed;
-  bottom: 0;
-  z-index: 100;
+  bottom: -12%;
+  z-index: 90;
+  width: 100vw;
+  left: 0;
 
 }
 
@@ -227,22 +229,13 @@ h1 {
   @media only screen and (min-width: 800px) and (max-width: 1090px){
 
     .bichinhoCorpo{
-      bottom: 8%;
+      bottom: 5%;
       left: 25%;
     }
   
     .maos{
-      bottom: 7%;
+      bottom: 5%;
       left: 23%;
-    }
-
-    .fillWhite{
-      position: absolute;
-      height: 5%;
-      width: 100%;
-      bottom: 0;
-      background-color: white;
-      z-index: 100;
     }
 
     #habilidades{
@@ -250,7 +243,9 @@ h1 {
     }
 
     #waves{
-      bottom: 5%;
+      bottom: -5%;
+      width: 100vw;
+      left: 0;
     }
 
     h1{
@@ -307,18 +302,10 @@ h1 {
   }
   #waves {
     width: 1000px;
-    bottom: 5%;
+    bottom: -5%;
     left: 0;
   }
 
-  .fillWhite{
-    position: absolute;
-    height: 6%;
-    width: 100%;
-    bottom: 0;
-    background-color: white;
-    z-index: 100;
-  }
 
   .container-icon{
     margin: 60vh 60vw;
@@ -395,7 +382,7 @@ h1 {
 
   #waves {
     width: 200%;
-    bottom: 2%;
+    bottom: -5%;
     left: -80%;
   }
 
